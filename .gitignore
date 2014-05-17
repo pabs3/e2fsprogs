@@ -1,7 +1,9 @@
+aclocal.m4
 autom4te.cache
 build
 build.profiled
 build.static
+configure
 FILES
 ^core
 *~
@@ -84,6 +86,7 @@ lib/blkid/tst_save
 lib/blkid/tst_tag
 lib/blkid/tst_types
 lib/config.h
+lib/config.h.in
 lib/dirpaths.h
 lib/e2p/e2p.pc
 lib/e2p/subdirs

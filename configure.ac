@@ -900,7 +900,9 @@ dnl End of configuration options
 dnl
 AC_SUBST(BINARY_TYPE)
 AC_PROG_MAKE_SET
-CHECK_GNU_MAKE
+AX_CHECK_GNU_MAKE
+AS_IF([test "x$ifGNUmake" = "x"], [ifNotGNUmake='#'], [ifNotGNUmake=''])
+AC_SUBST(ifNotGNUmake)
 AC_PATH_PROG(LN, ln, ln)
 AC_PROG_MKDIR_P
 AC_PROG_LN_S
